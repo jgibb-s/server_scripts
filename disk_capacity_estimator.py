@@ -31,11 +31,7 @@ plt.title("Disk Usage Over Time")
 plt.xlabel("Date")
 plt.ylabel("Space Used (GB)")
 plt.legend(loc='upper left', ncols=5)
-
-ax = plt.gca()
-pos = np.arange(0,rows,28)
-l = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"]#, "Oct", "Nov", "Dec"]#
-ax.set(xticks=pos, xticklabels=l)
+ax.xaxis.set_major_locator(plt.MaxNLocator(3))
 
 # Linear regression
 slope, intercept, _, _, _ = linregress(df.loc[:,"date_ordinal"], df.loc[:,"storage"])
