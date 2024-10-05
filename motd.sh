@@ -1,6 +1,5 @@
 #! /bin/bash
-
-#clear
+clear
 
 # get the load averages
 read one five fifteen rest < /proc/loadavg
