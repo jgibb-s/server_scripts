@@ -3,6 +3,7 @@
 myDir=$(dirname "$0")
 source "$myDir/config.sh"
 
+
 clear="\e[39\e[0m"
 dim="\e[2m"
 
